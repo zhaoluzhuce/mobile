@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: "\5FAE\8F6F\96C5\9ED1", Helvetica, sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#box{
+    width: 640px;
+    height: 1008px;
+    position: absolute;
+    left: 50%;
+    margin-left: -320px;
+    top:0;
+    transform-origin: top;
+    -webkit-transform-origin: top;
+}
+#box ul {
+    width: 100%;
+    height: 100%;
+}
+#box ul li{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+#box ul li:nth-child(1){
+    background-image: url(img/1_2.jpg) ;
+}
+#box ul li:nth-child(2){
+    background-image: url(img/1_3.jpg);
+}
+#box ul li:nth-child(3){
+    background-image: url(img/1_6.jpg);
+}
+#box ul li:nth-child(4){
+    background-image: url(img/1_15.jpg);
+}
+#box ul li:nth-child(5){
+    background-image: url(img/1_32.jpg);
+}
+#box ul li:nth-child(6){
+    background-image: url(img/1_40.jpg);
+}
+#box ul li:nth-child(7){
+    background-image: url(img/1_8.jpg);
+}
+#box ul li.zIndex {
+    z-index: 10;
+}
+.box ul li div{
+    position: relative;
+    width: 640px;
+    height: 1008px;
+}
+p{
+    font-size: 40px;
+    font-weight: 800;
+    margin-left: 80px;
+    line-height: 80px;
+    margin-top: 80px;
+}
+.boxA p{
+    font-size: 80px;
+    line-height: 120px;
+}
+@keyframes slideLeft {
+    0%{
+        transform: translate(-500px);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+.left1{
+    animation:slideLeft 2s 1;
+}
+@keyframes slideTop {
+     0%{
+         transform: translate(0,-500px);
+     }
+     100%{
+         transform: translate(0,0);
+     }
+ }
+.left2{
+    animation:slideTop 2s 1;
+}
+@keyframes ccc {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(3);
+    }
+}
+.left3{
+    animation:ccc 2s 1;
+}
+@keyframes aaa {
+    0%{
+        transform: scale(2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.left4{
+    animation:aaa 2s 1;
+}
+@keyframes bbb {
+    0%{
+        transform: scale(0.2) rotate(0deg);
+    }
+    100%{
+        transform: scale(1) rotate(360deg);
+    }
+}
+.left5{
+    animation:bbb 2s 1;
+}
+.left1{
+    font-size: 60px;
+    font-weight: 800;
+}
+.boxG p.left5{
+    margin-left: 40px;
+    font-size: 80px;
+    line-height: 180px;
+}
+.boxB p{
+    color: #0cc65b;
+}
+.boxD p{
+    color: #99FFFF;
+}
+.boxF p{
+    color: bisque;
+}
